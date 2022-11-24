@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AdministratorLoginComponent } from './administrator-login/administrator-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 import { UserloginComponent } from './userlogin/userlogin.component';
+import { BookEntryComponent } from './book-entry/book-entry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdministratorLoginComponent,
     UserRegistrationComponent,
-    UserloginComponent
+    UserloginComponent,
+    BookEntryComponent
   ],
   imports: [
     BrowserModule,
