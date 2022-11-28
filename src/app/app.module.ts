@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,46 @@ import { BookSearchComponent } from './book-search/book-search.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { BookdeleteComponent } from './bookdelete/bookdelete.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute : Routes = [
+
+  {
+    path:"",
+    component:AdministratorLoginComponent
+  },
+  {
+    path:"login",
+    component:UserloginComponent
+  },
+  
+  {
+    path:"entry",
+    component: BookEntryComponent
+  },
+  {
+    path:"search",
+    component: BookSearchComponent
+
+  },
+  {
+    path:"edit",
+    component: BookEditComponent
+  },
+  {
+    path:"delete",
+    component:BookdeleteComponent
+  },
+  {
+    path:"viewall",
+    component:ViewAllBooksComponent
+  },
+  {
+    path:"navbar",
+    component:NavBarComponent
+
+  }
+]
 
 @NgModule({
   declarations: [
@@ -28,7 +68,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
