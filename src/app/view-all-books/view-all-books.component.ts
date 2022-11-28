@@ -44,19 +44,19 @@ books : any=[
     "price":"550"
   },
   {
-    "title":"The Alchemist",
+    "title":"baber",
     "image":"https://m.media-amazon.com/images/I/51FXs5gTmdL._SX427_BO1,204,203,200_.jpg",
     "author":"Paulo Coulho",
     "price":"550"
   },
   {
-    "title":"The Alchemist",
+    "title":"The www",
     "image":"https://m.media-amazon.com/images/I/51FXs5gTmdL._SX427_BO1,204,203,200_.jpg",
     "author":"Paulo Coulho",
     "price":"550"
   },
   {
-    "title":"The Alchemist",
+    "title":"unknown",
     "image":"https://m.media-amazon.com/images/I/51FXs5gTmdL._SX427_BO1,204,203,200_.jpg",
     "author":"Paulo Coulho",
     "price":"550"

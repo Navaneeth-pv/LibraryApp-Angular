@@ -13,6 +13,7 @@ import { BookEditComponent } from './book-edit/book-edit.component';
 import { BookdeleteComponent } from './bookdelete/bookdelete.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const myRoute : Routes = [
 
@@ -69,7 +70,8 @@ const myRoute : Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

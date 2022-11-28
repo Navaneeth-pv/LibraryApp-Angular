@@ -7,4 +7,37 @@ import { Component } from '@angular/core';
 })
 export class BookEntryComponent {
 
+  title=""
+  image=""
+  author=""
+  price=""
+  releasedYear=""
+  distributer=""
+  language=""
+
+
+
+
+  readValues=()=>
+  {
+    let data:any={
+      "title":this.title,
+      "image":this.image,
+      "author":this.author,
+      "price":this.price,
+      "releasedYear":this.releasedYear,
+      "distributer":this.distributer,
+      "language":this.language
+  
+      
+
+    }
+    console.log(data)
+  }
+
+
+
+
+
+
 }
