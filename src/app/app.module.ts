@@ -14,6 +14,7 @@ import { BookdeleteComponent } from './bookdelete/bookdelete.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NewnavbarComponent } from './newnavbar/newnavbar.component';
 
 const myRoute : Routes = [
 
@@ -51,6 +52,10 @@ const myRoute : Routes = [
     path:"navbar",
     component:NavBarComponent
 
+  },
+  {
+    path:"newnavbar",
+    component:NewnavbarComponent
   }
 ]
 
@@ -65,7 +70,8 @@ const myRoute : Routes = [
     BookSearchComponent,
     BookEditComponent,
     BookdeleteComponent,
-    NavBarComponent
+    NavBarComponent,
+    NewnavbarComponent
   ],
   imports: [
     BrowserModule,
